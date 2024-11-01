@@ -4,6 +4,7 @@
 -- getting all the present databases 
 
 show databases
+show dbs
 
 
 -- if the database is present then it will use , else the new database has been created with the name 
@@ -11,7 +12,7 @@ show databases
 use database_name 
 use student 
 
--- inserting the values into the database 
+-- inserting the values into the database :- 
 
 db.database_name.insertOne({object : "in key value pair"})
 
@@ -24,4 +25,21 @@ db.database_name.find()
 
 db.student.find()
 
+
+-- creating collections in database :- 
+
+db.createCollection("collection_name")
+
+-- we can see the collections :- 
+
+show collections
+
+
+-- Deleting Collections and Databases :- 
+
+collection_name.drop()
+
+db.dropDatabase() 
+
+-- once we drop the database , the collections automatically deleted 
 
