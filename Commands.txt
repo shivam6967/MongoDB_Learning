@@ -1,0 +1,27 @@
+//  Commands for the MongoDB (Executed on the MongoShell) :-
+
+
+-- getting all the present databases 
+
+show databases
+
+
+-- if the database is present then it will use , else the new database has been created with the name 
+
+use database_name 
+use student 
+
+-- inserting the values into the database 
+
+db.database_name.insertOne({object : "in key value pair"})
+
+db.student.insertOne({name : "Shiva" , age: 45})
+
+
+-- for showing all the data , like select we use :- 
+
+db.database_name.find()
+
+db.student.find()
+
+
